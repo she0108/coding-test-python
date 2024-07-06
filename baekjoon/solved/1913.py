@@ -12,6 +12,8 @@ num = 2
 for n in range(1, N // 2 + 1):
     i -= 1
     grid[i][j] = num
+    if K == num:
+        x, y = i + 1, j + 1
     num += 1
     for _ in range(n * 2 - 1):
         j += 1
@@ -43,3 +45,6 @@ for i in range(N):
         print(grid[i][j], end=" ")
     print()
 print(x, y)
+
+
+# 다른 풀이 도전
